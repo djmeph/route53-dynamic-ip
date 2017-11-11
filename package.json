@@ -1,0 +1,24 @@
+{
+  "name": "route53-dynamic-ip",
+  "version": "1.0.0",
+  "description": "Node.js Dynamic IP Address script for AWS Route 53 Hosted Zones",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djmeph/route53-dynamic-ip.git"
+  },
+  "author": "DJ Meph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djmeph/route53-dynamic-ip/issues"
+  },
+  "homepage": "https://github.com/djmeph/route53-dynamic-ip#readme",
+  "dependencies": {
+    "nice-route53": "^1.0.4",
+    "public-ip": "^2.3.5"
+  }
+}
