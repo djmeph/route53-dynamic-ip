@@ -10,8 +10,8 @@ const AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY;
 const AWS_SECRET_KEY = process.env.AWS_SECRET_KEY;
 const ZONE_ID = process.env.ZONE_ID;
 const DOMAIN = process.env.DOMAIN;
-const RECORD_TYPE = process.env.RECORD_TYPE;
 const TTL = process.env.TTL;
+const RECORD_TYPE = "A";
 
 // Import dependencies
 const publicIp = require('public-ip');
