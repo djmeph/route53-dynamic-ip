@@ -17,7 +17,8 @@ const RECORD_TYPE = "A";
 const publicIp = require('public-ip');
 const Route53 = require('nice-route53');
 const inspect = require('util').inspect;
-const inspectOpts = { colors: true, depth: Infinity };
+
+// Construct Route53 handler
 const r53 = new Route53({
   accessKeyId     : AWS_ACCESS_KEY,
   secretAccessKey : AWS_SECRET_KEY,
@@ -62,6 +63,6 @@ r53.records(ZONE_ID, (err, data) => {
 
 //Errors output to console log
 function fail (err) {
-  console.log(inspect(err, inspectOpts));
+  console.log(inspect(err, { colors: true, depth: Infinity }));
   process.exit(1);
 }
