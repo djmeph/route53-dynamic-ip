@@ -4,7 +4,7 @@
   "description": "Node.js Dynamic IP Address script for AWS Route 53 Hosted Zones",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/djmeph/route53-dynamic-ip#readme",
   "dependencies": {
-    "nice-route53": "^1.0.4",
-    "public-ip": "^2.3.5"
+    "@aws-sdk/client-route-53": "^3.533.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.27"
   }
 }

@@ -2,14 +2,10 @@
 
 Setup dependencies using `yarn install`
 
-### Sample script to set variables:
+### Create .env file with the following variables:
 
 ```
-#!/bin/bash
-export AWS_ACCESS_KEY="XXXXXXXXXXXXXXXXXXXX"
-export AWS_SECRET_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-export ZONE_ID="XXXXXXXXXXXXXX"
-export DOMAIN="example.com"
-export TTL=300
-npm start
+ZONE_ID=XXXXXXXXXXXXXXXXXXXX
+DOMAIN_NAME=example.com
+TTL=60
 ```
