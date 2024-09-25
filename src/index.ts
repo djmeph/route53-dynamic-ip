@@ -55,6 +55,7 @@ config();
         }]
       }
     });
+    await route53.send(command);
 
     console.log(`Set ${process.env.DOMAIN_NAME} to ${ip}`);
   }
